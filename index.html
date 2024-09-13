@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Quotes</title>
+</head>
+<body>
+    <div class="container " >
+        <div class="  d-flex align-items-center justify-content-center flex-wrap vh-100 ">
+            <div class=" w-75 p-5 text-center con w-md-50 ">
+              <h1  class="py-3">Quote of the Day</h1>
+            <p class="py-3">Press the button below to recieve a random quote!</p>
+            <button class="btn btn-dark mb-3 border border-black b" onclick="press()">New Quote</button>  
+            <div class="quotes " id="q">
+                
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        var randomStrings = [
+         "this is an example of a random string",
+         "here's another random string",
+         "or maybe this string will be chosen at random"
+          ];
+        function RndMsg() {
+          var msg = randomStrings[Math.floor(Math.random()*randomStrings.length)];
+          document.getElementById('randomDiv').innerHTML = msg;
+          }
+      </script>
+    
+    <script src="main.js"></script>
+</body>
+</html>
